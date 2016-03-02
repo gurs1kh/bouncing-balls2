@@ -1,4 +1,4 @@
-# bouncing-sounds
+# bouncing-sounds2
 
 A basic simulation of balls bouncing around in a circle that make sounds everytime they bounce off the wall.
 
