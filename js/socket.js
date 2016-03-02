@@ -44,7 +44,7 @@ function startSocket(game) {
 	});
 	
 	var stateInput = document.getElementById("state");
-	stateInput.value = "a";
+	
 	var saveState = document.getElementById("save");
 	var loadState = document.getElementById("load");
 	
