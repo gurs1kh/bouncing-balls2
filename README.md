@@ -12,4 +12,4 @@ You can save and load the state of the simulation using the save/load state butt
 
 The piano samples were taken from http://theremin.music.uiowa.edu/MISpiano.html
 
-See it in action at: http://gurs1kh.github.io/bouncing-sounds2 (note: due to current implementation, the sounds may be delayed. It is recommended that you download the project and run it locally)
+See it in action at: http://gurs1kh.github.io/bouncing-sounds2/ (note: due to current implementation, the sounds may be delayed. It is recommended that you download the project and run it locally)
