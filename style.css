@@ -1,0 +1,16 @@
+#gameWorld {
+	float:left;
+}
+
+#controller {
+	float: left;
+	padding-left: 1%;
+}
+
+#ballNum {
+	width: 40px;
+}
+
+#controller select {
+	margin-top: 10px;
+}

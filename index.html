@@ -1,0 +1,61 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bouncing Sound</title>
+	<script type="text/javascript" src="http://76.28.150.193:8888/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="js/gameengine.js"></script>
+    <script type="text/javascript" src="js/circle.js"></script>
+    <script type="text/javascript" src="js/note.js"></script>
+    <script type="text/javascript" src="js/note-creator.js"></script>
+    <script type="text/javascript" src="js/ball.js"></script>
+    <script type="text/javascript" src="js/line.js"></script>
+    <script type="text/javascript" src="js/controller.js"></script>
+    <script type="text/javascript" src="js/socket.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+	
+	<link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <canvas id="gameWorld" tabindex="1" width="500" height="500" style="border: 1px solid black;" autofocus></canvas>
+	<div id="controller">
+		<label for="ballNum"># of Balls</label>
+		<input type="number" id="ballNum" min=0 max=7 value=5 />
+		<br />
+		<label for="ballSize">Ball Size</label>
+		<input type="range" id="ballSize" min=2 max=50 value=10 />
+		<br />
+		<select id="scale">
+			<option value="0,2,4,5,7,9,11,12">Major Scale</option>
+			<option value="0,2,3,5,7,8,10,12">minor Scale</option>
+			<option value="0,2,4,7,9,12">Major Pentatonic Scale</option>
+			<option value="0,2,4,8,10,12">Whole-step (aka Dream) Scale</option>
+			<option value="0,1,2,3,4,5,6,7,8,9,10,11">12-tone row</option>
+			<option value="-1,2,4,6,7,9,11,12">Raag Kalyan</option>
+			<option value="0,2,3,5,7,9,10,12">Raag Kafi</option>
+			<option value="0,1,4,5,7,8,11,12">Raag Bhairav</option>
+			<option value="0,1,3,5,7,8,10,12">Raag Bhairavi</option>
+			<option value="0,1,3,6,8,11,12">Raag Gujri</option>
+			<option value="0,1,4,6,7,8,11,12">Raag Poorvi</option>
+			<option value="-3,-1,0,1,4,6,9,11,12">Raag Marwa</option>
+			<option value="custom">Custom</option>
+		</select>
+		<br />
+		<input type="text" id="customScale" hidden />
+		<br />
+		
+		<br />
+		<button id="update">Update</button>
+		<button id="clear">Clear</button>
+		
+		<br />
+		<br />
+		<label for="state">State Name</label>
+		<input type="text" id="state" />
+		<br />
+		<button id="save">Save State</button>
+		<button id="load">Load State</button>
+	</div>
+</body>
+</html>
