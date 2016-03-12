@@ -30,7 +30,7 @@ window.onload = function() {
 	}
     
 	game.init(ctx);
-    game.start();
+	game.start();
 	
 	startController(game, ballNum, ballRadius);
 	startSocket(game);
